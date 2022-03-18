@@ -1,0 +1,25 @@
+import styled from 'styled-components';
+
+export const TableItems = styled.tr`
+
+.bodyItem {
+    padding:8px;
+    font-size:15px;
+    background-color:#E4E4E4;  
+    border-radius:3px;
+
+    img {
+        width:25px;
+    }
+}
+
+.icon {
+    cursor:pointer;
+    transition:all 0.1s linear;
+}
+
+.icon:hover {
+    transform: scale(130%);
+}
+
+`;
