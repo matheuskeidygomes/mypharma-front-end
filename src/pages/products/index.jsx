@@ -26,7 +26,7 @@ export default function Products() {
 
     function Search(searchProduct, searchFilter) {
 
-        if (searchProduct !== '' && searchFilter !== '') {
+        if (searchProduct !== '' && searchFilter !== 'Choose the filter...') {
     
           setSearchList(list.filter((item) => item[searchFilter.toLowerCase()].toLowerCase().indexOf(searchProduct.toLowerCase()) > -1));
     

@@ -26,7 +26,7 @@ export default function Categories() {
 
     function Search(searchCategory, searchFilter) {
 
-        if (searchCategory !== '' && searchFilter !== '') {
+        if (searchCategory !== '' && searchFilter !== 'Choose the filter...') {
     
           setSearchList(list.filter((item) => item[searchFilter.toLowerCase()].toLowerCase().indexOf(searchCategory.toLowerCase()) > -1));
     

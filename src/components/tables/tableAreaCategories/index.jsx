@@ -22,7 +22,7 @@ export default function Table(props) {
 
                     <select value={props.Filter} onChange={(e) => props.onFilter(e)} >
 
-                        <option> </option>
+                        <option> Choose the filter... </option>
                         <option> Name </option>
                         <option> Description </option>
 
