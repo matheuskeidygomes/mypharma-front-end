@@ -2,9 +2,11 @@ import React from 'react';
 import * as style from './style.js';
 import X from '../images/x.png';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 export default function Menu(props) {
 
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const token = useSelector(state => state.UserReducer.token);
 
@@ -41,10 +43,10 @@ export default function Menu(props) {
 
                     {token ?
                         <>
-                            <li> <a href="/"> Home </a> </li>
-                            <li> <a href="/products"> Products </a> </li>
-                            <li> <a href="/categories"> Categories </a> </li>
-                            <li> <a href="/brands"> Brands </a> </li>
+                            <li> <a onClick={() => {navigate('/'); props.click();}}> Home </a> </li>
+                            <li> <a onClick={() => {navigate('/products'); props.click();}}> Products </a> </li>
+                            <li> <a onClick={() => {navigate('/categories'); props.click();}}>Categories </a> </li>
+                            <li> <a onClick={() => {navigate('/brands'); props.click();}}> Brands </a> </li>
                             <li onClick={() => LogOut()}>Logout</li>
                         </>
                     :
