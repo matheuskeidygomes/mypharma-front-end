@@ -61,7 +61,7 @@ export default function AddCategories() {
 
                 <span>Name</span>
 
-                <input type="text" maxlength="15" value={name} required onChange={(e) => setName(e.target.value)} placeholder="Max: 15 characters" />
+                <input type="text" maxlength="20" value={name} required onChange={(e) => setName(e.target.value)} placeholder="Max: 15 characters" />
 
                 <span>Description</span>
 

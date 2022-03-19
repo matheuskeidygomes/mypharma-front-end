@@ -43,16 +43,16 @@ export default function Menu(props) {
 
                     {token ?
                         <>
-                            <li> <a onClick={() => {navigate('/'); props.click();}}> Home </a> </li>
-                            <li> <a onClick={() => {navigate('/products'); props.click();}}> Products </a> </li>
-                            <li> <a onClick={() => {navigate('/categories'); props.click();}}>Categories </a> </li>
-                            <li> <a onClick={() => {navigate('/brands'); props.click();}}> Brands </a> </li>
+                            <li onClick={() => {navigate('/'); props.click();}}> Home </li>
+                            <li onClick={() => {navigate('/products'); props.click();}}> Products </li>
+                            <li onClick={() => {navigate('/categories'); props.click();}}>Categories </li>
+                            <li onClick={() => {navigate('/brands'); props.click();}}> Brands </li>
                             <li onClick={() => LogOut()}>Logout</li>
                         </>
                     :
                         <>
-                            <li> <a href="/login"> Login </a> </li>
-                            <li> <a href="/register"> Sign up </a> </li>
+                            <li onClick={() => {navigate('/login'); props.click();}}> Login </li>
+                            <li onClick={() => {navigate('/register'); props.click();}}> Sign up </li>
                         </>
                     }
 

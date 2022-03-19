@@ -56,11 +56,7 @@ export const Nav = styled.nav`
         li {
             padding:15px;
             transition:all 0.1s linear;
-
-            a {
-                text-decoration:none;
-                color:white;
-            }
+            color:white;
         }
 
         li:hover {

@@ -147,7 +147,7 @@ export default function EditProducts() {
 
                     <span>Name</span>
 
-                    <input type="text" maxlength="15" value={name} onChange={(e) => setName(e.target.value)} placeholder="Max: 15 characters" />
+                    <input type="text" maxlength="20" value={name} onChange={(e) => setName(e.target.value)} placeholder="Max: 15 characters" />
 
                     <span>Description</span>
 

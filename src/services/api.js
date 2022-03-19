@@ -1,3 +1,5 @@
-//export const api = "http://localhost:3100";
+import dotenv from 'dotenv';
 
-export const api = "https://my-pharma-portal-api.herokuapp.com";
+dotenv.config();
+
+export const api = process.env.API;
