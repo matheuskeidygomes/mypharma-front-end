@@ -16,7 +16,7 @@ export default function Table(props) {
 
             <div className="searchBox">
 
-                <input type="text" placeholder={props.Filter ? `Search by category ${props.Filter}...` : "Choose the search filter..."} value={props.SearchedProduct} onChange={(e) => props.onChange(e)} />
+                <input type="text" placeholder={props.Filter ? `Search by product ${props.Filter}...` : "Choose the search filter..."} value={props.SearchedProduct} onChange={(e) => props.onChange(e)} />
 
                 <div>
 
