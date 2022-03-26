@@ -62,7 +62,7 @@ export default function Products() {
 
             <div>
 
-                {loading ? <img src={LoadingIcon} alt="load" /> : <Table list={searchList} update={()=>setUpdate(true)} SearchedProduct={searchProduct} Filter={searchFilter} onChange={(e) => setSearchProduct(e.target.value)} onFilter={(e) => setSearchFilter(e.target.value)} onClick={()=> Search(searchProduct, searchFilter)}/> }
+                {loading ? <img src={LoadingIcon} alt="load" /> : <Table list={searchList} update={()=>setUpdate(true)} SearchedProduct={searchProduct} Filter={searchFilter} onChange={(e) => setSearchProduct(e.target.value)} onFilter={(e) => e.target.value != "Choose the filter..." ? setSearchFilter(e.target.value) : setSearchFilter("")} onClick={()=> Search(searchProduct, searchFilter)}/> }
                 
             </div>
 
