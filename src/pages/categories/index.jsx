@@ -62,7 +62,7 @@ export default function Categories() {
 
             <div>
 
-                {loading ? <img src={LoadingIcon} alt="load" /> : <Table list={searchList} update={()=>setUpdate(true)} SearchedCategory={searchCategory} Filter={searchFilter} onChange={(e) => setSearchCategory(e.target.value)} onFilter={(e) => e.target.value != "Choose the filter..." ? setSearchFilter(e.target.value) : setSearchFilter("")} onClick={()=> Search(searchCategory, searchFilter)}/>}
+                {loading ? <img src={LoadingIcon} alt="load" /> : <Table list={searchList} update={()=>setUpdate(true)} SearchedCategory={searchCategory} Filter={searchFilter} onChange={(e) => setSearchCategory(e.target.value)} onFilter={(e) => e.target.value !== "Choose the filter..." ? setSearchFilter(e.target.value) : setSearchFilter("")} onClick={()=> Search(searchCategory, searchFilter)}/>}
 
             </div>
 

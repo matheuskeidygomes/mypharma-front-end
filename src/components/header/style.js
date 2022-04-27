@@ -6,6 +6,7 @@ export const Header = styled.header`
     align-items:center;
     background:linear-gradient(#064CB4, #1E98A8);
     padding:10px;
+    height:15vh;
 `;
 
 export const Logo = styled.span`

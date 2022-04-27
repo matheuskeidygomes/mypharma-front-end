@@ -6,7 +6,6 @@ export const Container = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
 
     .form {
         background-color:rgb(218, 218, 218);
